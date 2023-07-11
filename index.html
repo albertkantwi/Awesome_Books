@@ -8,21 +8,18 @@
 </head>
 <body>
     <section>
-        <main>
-         <h1>Awesome Books</h1>
-     
-         <div class="books-list"></div>
-     
-         <form class="addForm">
-          <label for="title">Title:</label>
-          <input type="text" class="title" required />
-          <label for="author">Author:</label>
-          <input type="text" class="author" required />
-          <button type="submit" class="form-btn">Add</button>
-         </form>
+        <main class="main">
+            <h1>Awesome Books</h1>     
+            <div class="books-list"></div>
+            <form class="addForm">
+                <label for="title" hidden>Title:</label>
+                <input type="text" class="title" required placeholder="Title"/>
+                <label for="author" hidden>Author:</label>
+                <input type="text" class="author" required placeholder="Author"/>
+                <button type="submit" class="form-btn">Add</button>
+            </form>            
         </main>
-       </section>
-
+    </section>
        <script src="index.js"></script>
 </body>
 </html>

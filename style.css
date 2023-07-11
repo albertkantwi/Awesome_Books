@@ -2,3 +2,40 @@
   margin: 0;
   padding: 0;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.addForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 0;
+}
+
+.title {
+  width: 10rem;
+}
+
+.author {
+  width: 10rem;
+}
+
+.form-btn {
+  width: 2rem;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.remove-btn {
+  width: 4rem;
+}

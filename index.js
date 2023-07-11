@@ -26,7 +26,10 @@ function displayBooks() {
     removeBtn.textContent = 'Remove';
     removeBtn.addEventListener('click', () => removeBook(index));
 
+    const hr = document.createElement('hr');
+
     bookDiv.appendChild(removeBtn);
+    bookDiv.appendChild(hr);
     bookListDiv.appendChild(bookDiv);
   });
 }
