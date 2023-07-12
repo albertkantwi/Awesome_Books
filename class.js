@@ -8,22 +8,26 @@ class BookCollection {
       bookListDiv.innerHTML = '';
   
       this.books.forEach((book, index) => {
+        const booksContainerDiv = document.createElement('div');
+        booksContainerDiv.classList.add('books-container');
         const bookDiv = document.createElement('div');
         bookDiv.classList.add('book-details');
         bookDiv.innerHTML = `
-          <strong>${book.title}</strong> By: ${book.author}
+        <strong>"${book.title}"</strong> by: ${book.author}
         `;
-  
+        
+        const removeDiv = document.createElement('div');
         const removeBtn = document.createElement('button');
         removeBtn.classList.add('remove-btn');
         removeBtn.textContent = 'Remove';
         removeBtn.addEventListener('click', () => this.removeBook(index));
-
-        const hr = document.createElement('hr');
-  
-        bookDiv.appendChild(removeBtn);
-        bookDiv.appendChild(hr);
-        bookListDiv.appendChild(bookDiv);
+        
+        removeDiv.appendChild(removeBtn);        
+        
+        booksContainerDiv.appendChild(bookDiv);
+        booksContainerDiv.appendChild(removeDiv);
+        
+        bookListDiv.appendChild(booksContainerDiv);
       });
     }
   
