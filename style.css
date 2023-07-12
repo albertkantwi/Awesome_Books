@@ -60,3 +60,7 @@
 .remove-btn {
   width: 4rem;
 }
+
+.books-container:nth-child(odd) {
+  background-color: lightgrey;
+} 
